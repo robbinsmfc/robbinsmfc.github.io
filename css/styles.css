@@ -1,1 +1,5 @@
-.bangers400 { font-family: 'Bangers', normal;font-size: 40px; font-weight: 400; }
+h1, h2 {
+    font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.home-image { margin: 30px }
