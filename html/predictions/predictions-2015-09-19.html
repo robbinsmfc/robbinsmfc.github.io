@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A layout example with a side menu that hides on mobile, just like the Pure website.">
+    <title>Footy Predictions 19-09-2015</title>
+    <script src="../../js/mustache.min.js"></script>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="../../css/layouts/side-menu-old-ie.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+    <link rel="stylesheet" href="../../css/layouts/side-menu.css">
+    <!--<![endif]-->
+    <script id="results-template" type="text/template">
+      {{#items}}
+      <tr>
+        <td>{{home}}</td>
+        <td>{{away}}</td>
+        <td class="score">{{prediction}}</td>
+        <td class="score">{{result}}</td>
+      </tr>
+      {{/items}}
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        console.log('Your document is ready!');
+        var request = new XMLHttpRequest();
+        var results = '';
+
+        request.open('GET', 'json/predictions-2015-09-19.json', true);
+        request.setRequestHeader('Content-Type', 'application/json');
+
+        request.onload = function() {
+          if (request.status >= 200 && request.status < 400) {
+            console.log(request.responseText);
+            results = JSON.parse(request.responseText);
+            var robj = {items: results}
+            var template = document.getElementById('results-template').innerHTML;
+            var info = Mustache.render(template, robj);
+        document.getElementById('results-body').innerHTML = info;
+          } else {
+            // We reached our target server, but it returned an error
+          }
+        };
+
+        request.send();
+
+      });
+    </script>
+  </head>
+  <body>
+    <div id="layout">
+      <!-- Menu toggle -->
+      <a href="#menu" id="menuLink" class="menu-link">
+        <!-- Hamburger icon -->
+        <span></span>
+      </a>
+      <div id="menu">
+        <div class="pure-menu">
+          <a class="pure-menu-heading" href="../../index.html">Leon's Den</a>
+          <ul class="pure-menu-list">
+            <li class="pure-menu-item"><a href="../../index.html" class="pure-menu-link">Home</a></li>
+            <li class="pure-menu-item"><a href="../penguins.html" class="pure-menu-link">Penguins</a></li>
+          </ul>
+        </div>
+      </div>
+      <div id="main">
+        <div class="header">
+          <h1>Footy Predictions</h1>
+          <h2>Saturday 19th September</h2>
+        </div>
+        <div class="content">
+          <p>
+          </p>
+          <h2 class="content-subhead"></h2>
+          <table class="pure-table pure-table-bordered">
+            <thead>
+              <th>Home Team</th>
+              <th>Away Team</th>
+              <th>Prediction</th>
+              <th>Result</th>
+            </tr>
+          </thead>
+          <tbody id="results-body">
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="../../js/ui.js"></script>
+</body>
+</html>

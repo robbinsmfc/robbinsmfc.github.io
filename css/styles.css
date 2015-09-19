@@ -2,4 +2,16 @@ h1, h2 {
     font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+p.prediction-link {
+    text-align: center
+}
+
+.score {
+    text-align: center
+}
+
+table {
+    margin: 0 auto; /* or margin: 0 auto 0 auto */
+}
+
 .home-image { margin: 30px }
