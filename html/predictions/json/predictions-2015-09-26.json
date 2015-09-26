@@ -2,49 +2,49 @@
     {
         "home": "Tottenham",
         "away": "Man city",
-        "prediction": "",
+        "prediction": "1-3",
         "result": ""
     },
     {
         "home": "Southampton",
         "away": "Swansea",
-        "prediction": "",
+        "prediction": "1-2",
         "result": ""
     },
     {
         "home": "Newcastle",
         "away": "Chelsea",
-        "prediction": "",
+        "prediction": "1-2",
         "result": ""
     },
     {
         "home": "Liverpool",
         "away": "Aston Villa",
-        "prediction": "",
+        "prediction": "2-1",
         "result": ""
     },
     {
         "home": "Leicester",
         "away": "Arsenal",
-        "prediction": "",
+        "prediction": "2-2",
         "result": ""
     },
     {
         "home": "Stoke",
         "away":"Bournemouth",
-        "prediction": "",
+        "prediction": "1-2",
         "result": ""
     },
     {
         "home": "Man utd",
         "away": "Sunderland",
-        "prediction": "",
+        "prediction": "3-0",
         "result": ""
     },
     {
         "home": "West Ham",
         "away": "Norwich",
-        "prediction": "",
+        "prediction": "2-1",
         "result": ""
     }
 ]
