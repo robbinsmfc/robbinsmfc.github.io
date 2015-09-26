@@ -13,7 +13,7 @@
     },
     {
         "home": "Boumemouth",
-        "away": "Sunderiand",
+        "away": "Sunderland",
         "prediction": "1-1",
         "result": ""
     },
@@ -36,9 +36,9 @@
         "result": ""
     },
     {
-        "home": "",
-        "away": "",
-        "prediction": "",
+        "home": "Man City",
+        "away": "West Ham",
+        "prediction": "3-0",
         "result": ""
     }
 ]

@@ -1,0 +1,50 @@
+[
+    {
+        "home": "Tottenham",
+        "away": "Man city",
+        "prediction": "",
+        "result": ""
+    },
+    {
+        "home": "Southampton",
+        "away": "Swansea",
+        "prediction": "",
+        "result": ""
+    },
+    {
+        "home": "Newcastle",
+        "away": "Chelsea",
+        "prediction": "",
+        "result": ""
+    },
+    {
+        "home": "Liverpool",
+        "away": "Aston Villa",
+        "prediction": "",
+        "result": ""
+    },
+    {
+        "home": "Leicester",
+        "away": "Arsenal",
+        "prediction": "",
+        "result": ""
+    },
+    {
+        "home": "Stoke",
+        "away":"Bournemouth",
+        "prediction": "",
+        "result": ""
+    },
+    {
+        "home": "Man utd",
+        "away": "Sunderland",
+        "prediction": "",
+        "result": ""
+    },
+    {
+        "home": "",
+        "away": "",
+        "prediction": "",
+        "result": ""
+    }
+]
